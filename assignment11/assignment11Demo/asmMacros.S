@@ -2,7 +2,7 @@
 # Use this macro to print words to aid debugging.
 # This can help you trace through programs and get a better idea of 
 # the sequence of execution.  You can use it to log the execution and see how many times
-# loops repeat, whether an if or an else executes, etc.)
+# loops repeat, whether an if or an else executes, etc.
 #
 #  Use:   print word        // will print "word". 
 #  Use:   Multiple words by using [] for grouping
@@ -76,8 +76,8 @@ _p\@: .asciz "\m"
   push r31
   in r16,0x3f   // r16 = SREG
 
-  ldi  r24, \r
   mov  22,\r
+  ldi  r24, \r
   call _asmprintRV
 
   pop r31

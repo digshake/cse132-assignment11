@@ -72,7 +72,7 @@ void  _asmprintRV(byte r, byte v) {
   // Helper function to print a register and its value
   Serial.print("r");
   Serial.print(r);
-  Serial.print(" = ");
-  Serial.println(v);
+  Serial.print(" = 0x");
+  Serial.println(v, HEX);
 }
 

@@ -129,8 +129,8 @@ void testSumOddsUint8() {
   const int numTests = sizeof(arg1s)/sizeof(uint8_t);
 
   for(int i=0;i<numTests;i++) {
-    uint8_t arg1 = args1[i];
-    uint8_t arg2 = args2[i];
+    uint8_t arg1 = arg1s[i];
+    uint8_t arg2 = arg2s[i];
     uint8_t algorithm = sumOdds(arg1, arg2);
     uint8_t assembly = sumOddsUint8(arg1, arg2);
     uint8_t expected = results[i];
