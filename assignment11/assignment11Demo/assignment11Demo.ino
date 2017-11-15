@@ -125,7 +125,7 @@ void testSumOddsUint8() {
 
   uint8_t arg1s[]  = {2, 2, 5,  7, 2, 3, 254, 100};
   uint8_t arg2s[]   = {7, 4, 100, 10, 9,  16, 255, 128};
-  uint8_t results[]   = {15, 3, 2496, 16, 24, 63, 255, 1596};
+  uint16_t results[]   = {15, 3, 2496, 16, 24, 63, 255, 1596};
   const int numTests = sizeof(arg1s)/sizeof(uint8_t);
 
   for(int i=0;i<numTests;i++) {
