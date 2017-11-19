@@ -182,8 +182,8 @@ void setup() {
   // testSlowDivisonUint16();
 
   /* Simple Test
-  uint8_t dividend8 = 2;
-  uint8_t divisor8 = 7;
+  uint8_t dividend8 = 175;
+  uint8_t divisor8 = 26;
   uint8_t mod8Alg = slowModulusUint8(dividend8,divisor8);
   uint8_t mod8ASM = slowModulusAlgorithm(dividend8,divisor8);
   pprintf("slowModulusAlgorithm(%u,%u) is %u (algorithm) and %u (assembly); Should be %u\n", dividend8, divisor8, mod8Alg, mod8ASM, dividend8%divisor8);
@@ -192,14 +192,14 @@ void setup() {
   // testSlowModulusUint8();
 
   /* Simple Test
-  uint8_t arg1 = 175;
-  uint8_t arg2 = 26;
+  uint8_t arg1 = 2;
+  uint8_t arg2 = 7;
   uint8_t oddsAlg = sumOdds(arg1,arg2);
   uint8_t oddsASM = sumOddsUint8(arg1,arg2);
-  pprintf("slowModulusAlgorithm(%u,%u) is %u (algorithm) and %u (assembly); Should be %u\n", arg1, arg2, oddsAlg, oddsASM, 15);
+  pprintf("sumOdds(%u,%u) is %u (algorithm) and %u (assembly); Should be %u\n", arg1, arg2, oddsAlg, oddsASM, 15);
   // */ 
   // Full Test:
-  // testSlowModulusUint8();
+  // testSumOddsUint8();
 
   Serial.println("Done with tests!!!");
 }
